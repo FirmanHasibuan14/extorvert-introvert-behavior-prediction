@@ -1,7 +1,7 @@
 from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
-    APP_NAME = "Personality Prediction API"
+    APP_NAME: str = "Personality Prediction API"
     DATABASE_URL: str 
 
     class Config:
